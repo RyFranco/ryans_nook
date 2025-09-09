@@ -36,7 +36,7 @@ func main(){
 
 	// ':=' declare and initializes the var
 	//  Postgresql connection string, tells go how to connect to the DB
-	connectionString := "user=postgres password=sunnyday64 dbname=ryans_nook sslmode=disable"
+	connectionString := "user=postgres password=^&*$# dbname=ryans_nook sslmode=disable"
 
 	//assign new value to db & err
 	//Registers a new connection and returns a two values: a pointer to the db connection pool and any errors
