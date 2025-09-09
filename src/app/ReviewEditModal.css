@@ -1,0 +1,171 @@
+/* Overlay: full-screen dark background */
+.edit-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal content */
+.edit-modal-content {
+    background: #13131b;
+    border-radius: 8px;
+    width: 925px;
+    height: 550px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: width 0.3s ease, height 0.3s ease;
+    animation: growIn 0.2s ease-out forwards;
+    position: relative;
+}
+
+/* Close button */
+.edit-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color:white;
+    z-index: 1;
+}
+
+.header-banner {
+  height: 35%; /* or any banner color */
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  box-sizing: border-box;
+} 
+
+.header-banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* maintain aspect ratio while covering */
+  z-index: 0; /* ensure it goes behind the close button */
+  opacity: 45%;
+}
+/* Middle image that overlaps */
+.poster-img {
+  position: absolute;
+  top: 25%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 120px;
+  height: 180px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.poster-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bottom 75% of modal */
+.edit-review-details {
+  height: 65%;
+  padding: 60px 50px ;
+  box-sizing: border-box;
+}
+
+.title-info {
+    position: absolute;
+    top: 31%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 400px;
+    height: 35px;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size:large;
+    background: transparent;
+    
+}
+
+.title-info input{
+    background:none;
+    color:white;
+    border:none;
+    outline: none;
+    font-family: 'Courier New', monospace;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 2px;
+    
+}
+
+.title-info input:focus {
+  background:#0d0d14;
+  outline: none;
+}
+
+.edit-input-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.edit-input-row label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-progress-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 20%;
+}
+
+.edit-progress-inputs input {
+  width: 30px;  /* shrink width */
+  text-align: center; /* numbers look nicer centered */
+}
+
+.edit-review-details input{
+    background-color: #1b1b29;
+    color:whitesmoke;
+}
+
+.edit-review-save-button{
+     background-color: #0d0d14;
+    border: 2px solid #ac3232;
+    color: #ac3232;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+    bottom:5%;
+    right: 5%;
+    font-family: 'Courier New', monospace;
+    width:100px;
+    height:30px;
+}
+
+
+.edit-review-save-button:hover{
+    background-color: #ac3232;
+    color:#0d0d14;
+    content: "hi";
+}
+
+
