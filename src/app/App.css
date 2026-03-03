@@ -1,0 +1,11 @@
+body{
+  background:#0d0d14;
+  color:#ac3232;
+  font-family: 'Courier New', monospace;
+  
+}
+
+::selection {
+  background-color: #ac3232;
+  color:#0d0d14
+}

@@ -1,0 +1,153 @@
+form.review-form input{
+  background-color: #1b1b29 ;
+  color:#9aadb8;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #13131b;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 925px;
+  height:550px;
+  color: white;
+  position: relative;
+  transition: width 0.3s ease, height 0.3s ease;
+  animation: growIn 0.2s ease-out forwards;
+  transform-origin: center;
+
+
+}
+
+.modal-small {
+  width: 600px;
+  height: 400px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes growIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.media-button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  gap: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.mediaButtonForm {
+  aspect-ratio: 1 / 1;       /* makes it square */
+  width: 100%; 
+  padding: 1rem;
+  background-color: #0d0d14;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0%;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mediaButtonForm:nth-child(1) { animation-delay: 0.10s; }
+.mediaButtonForm:nth-child(2) { animation-delay: 0.20s; }
+.mediaButtonForm:nth-child(3) { animation-delay: 0.30s; }
+.mediaButtonForm:nth-child(4) { animation-delay: 0.40s; }
+.mediaButtonForm:nth-child(5) { animation-delay: 0.20s; }
+.mediaButtonForm:nth-child(6) { animation-delay: 0.30s; }
+.mediaButtonForm:nth-child(7) { animation-delay: 0.40s; }
+
+.mediaButtonForm:hover {
+  background-color: #ac3232;
+}
+
+
+form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #1b1b29;
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-row label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.progress-inputs input {
+  width: 100px;
+}
+
+.progress-slash {
+  font-weight: bold;
+  font-size: 1.2rem;
+}

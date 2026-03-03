@@ -1,0 +1,50 @@
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: 60px;
+}
+
+.logo {
+  font-size: 1.75rem;
+}
+
+.nav-links {
+  position: absolute;
+  left:40%;
+  
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+.nav-links li {
+  display: inline; 
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.blinkingCursor {
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink 1.75s step-start infinite;
+}
+
+@keyframes blink{
+  50%{
+    opacity: 0;
+  }
+}
